@@ -22,7 +22,6 @@ DS_Store
 /coverage
 
 .bushido
-.rvmrc
 
 /public/assets
 
@@ -31,3 +30,5 @@ DS_Store
 /tmp
 
 public/system/*
+
+config/database.yml

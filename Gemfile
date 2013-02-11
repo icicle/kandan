@@ -12,7 +12,9 @@ gem 'devise_cloudfuji_authenticatable'
 gem 'cloudfuji'
 
 # Server/transport gems
-gem 'thin'
+# Use unicorn as the app server
+gem 'unicorn'
+#gem 'thin'
 gem '_bushido-faye', '0.8.2'
 
 # Helper gems
@@ -24,6 +26,7 @@ gem 'jquery-rails'
 
 # Making the world a better, more stable place
 gem 'airbrake'
+
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -37,6 +40,9 @@ group :assets do
 end
 
 group :development do
+  gem 'capistrano'
+  gem 'capistrano-ext'
+  gem 'rvm-capistrano'
   gem 'pry-rails'
   gem 'quiet_assets'
   gem 'awesome_print'
