@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Core gems
-gem 'rails', '3.2.11'
+gem 'rails', '3.2.12'
 
 # Database adapters
 gem 'pg'
@@ -48,6 +48,7 @@ group :development do
   gem 'awesome_print'
   gem 'better_errors'
   gem 'binding_of_caller'
+  gem 'rb-readline'
 end
 
 group :test do
